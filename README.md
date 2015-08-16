@@ -21,4 +21,4 @@ Once you have created an app you need to create a `.plist` file called `TwitterK
 
 Finally, you need to fill the plist with the `consumer_key` and `consumer_secret` provided by twitter:
 
-![image](readme/twitter_key_setup.png)
+![image](Readme/twitter_key_setup.png)
