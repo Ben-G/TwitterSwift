@@ -71,7 +71,7 @@ class TweetStore {
     // handle upload
     let stateMerge = StateMerge(originalList:self.serverTweets, localState: self.localState)
     
-    TwitterClient.syncLocalState(StateMerge(originalList:serverTweets, localState: localState))
+    TwitterClient.syncLocalState(stateMerge)
       .then{ syncResult -> () in
         switch syncResult {
         case SyncResult.Success(let stateMergeResult):
